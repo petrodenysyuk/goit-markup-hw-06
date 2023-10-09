@@ -837,18 +837,7 @@ border-top: 0;
     .hero-title {
         margin-bottom: 72px;
     }
-
-@media only screen and (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/Dark-bg_mob@2x.jpg);
-    }
-}
-@media only screen and (max-width: 767.98px) {
-     
-    .footer-text-wrapper {
-        margin: 0;
-    }
+@media screen and (max-width: 1157.98px) {
     .advantages-subtitle {
         font-size: 36px;
     font-weight: 700;
@@ -862,6 +851,19 @@ border-top: 0;
     .advantages-wrapper {
         display: none;
     }
+}
+@media only screen and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/Dark-bg_mob@2x.jpg);
+    }
+}
+@media only screen and (max-width: 767.98px) {
+     
+    .footer-text-wrapper {
+        margin: 0;
+    }
+    
     .modal {
         width: 288px;
         padding: 72px 16px 16px 24px;
