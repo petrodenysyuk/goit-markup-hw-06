@@ -823,16 +823,32 @@ border-top: 0;
             padding-bottom: 96px;
             padding-top: 96px;
         }
+   
+    .hero {
+        padding: 72px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/dark-bg_mob.jpg);
+        max-width: 320px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
     
+    .hero-title {
+        margin-bottom: 72px;
+    }
+
+@media only screen and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/Dark-bg_mob@2x.jpg);
+    }
+}
+@media only screen and (max-width: 767.98px) {
+     
     .footer-text-wrapper {
         margin: 0;
     }
-    
-    
-    .hidden-text {
-        display: none;
-    }
-    
     .advantages-subtitle {
         font-size: 36px;
     font-weight: 700;
@@ -846,16 +862,6 @@ border-top: 0;
     .advantages-wrapper {
         display: none;
     }
-    .hero {
-        padding: 72px 0;
-    }
-    
-    .hero-title {
-        margin-bottom: 72px;
-    }
-
-
-@media only screen and (max-width: 767.98px) {
     .modal {
         width: 288px;
         padding: 72px 16px 16px 24px;
@@ -1015,10 +1021,19 @@ border-top: 0;
 /* -----------Mobile-Version-END------------- */
 
 /* -----------Tablet-Version-------------- */
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
         }
+        .menu-toggle-btn{
+            display: none;
+        }
+        .menu-container {
+            display: none;
+        }
+    }
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
     .footer-wrapper{
         flex-wrap: wrap;
         gap: 24px;
@@ -1054,6 +1069,9 @@ border-top: 0;
     }
     .hero {
         padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/dark-bg_tab.jpg);
+        max-width: 768px;
     }
     .hero-title {
         margin-bottom: 36px;
@@ -1062,6 +1080,12 @@ border-top: 0;
         flex-direction: column;
         gap: 12px;
         
+    }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/dark-bg_tab@2x.jpg);
     }
 }
 
@@ -1073,6 +1097,20 @@ border-top: 0;
     padding-left: 15px;
     padding-right: 15px;
     }
-    
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero-bg-img.jpg);
+        max-width: 1158px;
+    }
+    .products-img {
+        width: 360px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/people-office\ 1_desc@2x.jpg);
+    }
 }
 /* -----------Desktop-Version-END------------- */
